@@ -1,0 +1,143 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": -34.5567,
+        "lng": -67.78989
+    },
+    "accuracy": "1234",
+    "name": "Rachna Name",
+    "phone_number": "123456 Phone_Number",
+    "address": "324 Address",
+    "types": [
+        "chintu",
+        "Mintu"
+    ],
+    "website": "xyz",
+    "language": "eng"
+}
+HTTP/1.1 200 OK
+Date: Sun, 03 May 2020 07:39:19 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "37f346da35071dfe168ffe016e602748",
+    "scope": "APP",
+    "reference": "ce0b3cdad4bb2f6bdbac7204e5da854cce0b3cdad4bb2f6bdbac7204e5da854c",
+    "id": "ce0b3cdad4bb2f6bdbac7204e5da854c"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=37f346da35071dfe168ffe016e602748
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=37f346da35071dfe168ffe016e602748
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 03 May 2020 07:39:19 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 216
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-34.5567",
+        "longitude": "-67.78989"
+    },
+    "accuracy": "1234",
+    "name": "Rachna Name",
+    "phone_number": "123456 Phone_Number",
+    "address": "324 Address",
+    "types": "chintu,Mintu",
+    "website": "xyz",
+    "language": "eng"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "37f346da35071dfe168ffe016e602748"
+}
+HTTP/1.1 200 OK
+Date: Sun, 03 May 2020 07:39:20 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=37f346da35071dfe168ffe016e602748
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=37f346da35071dfe168ffe016e602748
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Sun, 03 May 2020 07:39:20 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 67
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "Get operation failed, looks like place_id  doesn't exists"
+}

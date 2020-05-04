@@ -1,0 +1,289 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-03T07:39:17.129Z",
+        "line": 19,
+        "name": "Verify Place is added in Google Map",
+        "description": "",
+        "id": "add-place-in-google-map;verify-place-is-added-in-google-map;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 905000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Payload of AddPlace API with \"Rachna Name\",\"324 Address\",\"123456 Phone_Number\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Rachna Name\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"324 Address\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"123456 Phone_Number\"",
+                  "offset": 57
+                }
+              ],
+              "location": "StepDefinitions.StepDefinitions.payload_of_AddPlace_API_with(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1096000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "\"AddPlaceAPI\" is called with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.StepDefinitions.is_called_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 316000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"status\" is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinitions.StepDefinitions.is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"scope\" is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefinitions.StepDefinitions.is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 365000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "\"name\" in \"GetPlaceAPI\" is same as \"Rachna Name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"name\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"Rachna Name\"",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefinitions.StepDefinitions.in_is_same_as(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "API is successfull with statuscode \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefinitions.StepDefinitions.api_is_successfull_with_statuscode(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-03T07:39:19.879Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.beforedeletePlace()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Veify Place is deleted from Google Map",
+        "description": "",
+        "id": "add-place-in-google-map;veify-place-is-deleted-from-google-map",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Payload of DeletePlace API",
+            "match": {
+              "location": "StepDefinitions.StepDefinitions.payload_of_DeletePlace_API()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 305000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "\"DeletePlaceAPI\" is called with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DeletePlaceAPI\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefinitions.StepDefinitions.is_called_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "API is successfull with statuscode \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefinitions.StepDefinitions.api_is_successfull_with_statuscode(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "\"status\" is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinitions.StepDefinitions.is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 306000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "\"msg\" in \"GetPlaceAPI\" is same as \"Get operation failed, looks like place_id  doesn\u0027t exists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"msg\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"Get operation failed, looks like place_id  doesn\u0027t exists\"",
+                  "offset": 34
+                }
+              ],
+              "location": "StepDefinitions.StepDefinitions.in_is_same_as(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeletePlace"
+          }
+        ]
+      }
+    ],
+    "name": "Add Place in Google map",
+    "description": "",
+    "id": "add-place-in-google-map",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/AddPlaceFeature.feature",
+    "tags": []
+  }
+]
